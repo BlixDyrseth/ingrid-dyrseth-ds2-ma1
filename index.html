@@ -12,17 +12,17 @@
     <link href="css/style.css" rel="stylesheet" />
     <title>Home - Feel Home</title>
   </head>
-  <body>
+  <body class="body-index">
     <header>
       <nav>
       <div class="header-big">
-        <div><a class="active" href="index.html">Home</a></div>
-        <div><a href="#">Products</a></div>
+        <div><a class="active"  href="index.html">Home</a></div>
+        <div><a href="products.html">Products</a></div>
         <div>
           <img class="logo" src="/img/feel-home-logo.png" alt="Feel home logo"/>
           </div>
         <div><a href="#">Inspiration</a></div>
-        <div><a href="#">Search</a></div>
+        <div><a href="#">Search <img class="icon-search" src="/img/icons/icon_search.svg" alt="search icon" /> </a></div>
       </div>
 
 
@@ -30,9 +30,9 @@
     <img class="logo-header-small" src="/img/feel-home-logo.png" alt="Feel home logo"/>
   <div class="nav-menu" id="nav-menu">
     <div><a class="active" href="index.html">Home</a></div>
-    <div><a href="#">Products</a></div>
+    <div><a href="products.html">Products</a></div>
     <div><a href="#">Inspiration</a></div>
-    <div><a href="#">Search</a></div>
+    <div><a href="#">Search <img class="icon-search" src="/img/icons/icon_search.svg" alt="search icon" /></a></div>
     </div>
     <button id="hamburgerBtn" class="hamburger-menu">
       <i class="fas fa-bars"></i>
@@ -47,7 +47,7 @@
     <main>
       <span class="first-container">
         <div class="intro-text">
-          <h1>A place to rest your head</h1>
+          <h1 class="h1-homepage">A place to rest your head</h1>
           <a class="button" href="#">Shop bedding >></a>
         </div>
         <div class="start-img"></div>
@@ -64,10 +64,11 @@
       </span>
       <span class="third-container">
         <h2>Popular products</h2>
-        <div class="main-products-container">
+        <div class="products-container">
+
           <a href="#">
-          <div class="main-product">
-            <div class="main-product-img">
+          <div class="product-card">
+            <div class="product-card-img">
               <img
                 class="product-img"
                 src="/img/products/side-table.jpg"
@@ -80,8 +81,8 @@
           </a>
           </div>
           <a href="#">
-          <div class="main-product">
-            <div class="main-product-img">
+          <div class="product-card">
+            <div class="product-card-img">
               <img
                 class="product-img"
                 src="/img/products/blue-vase.jpg"
@@ -94,8 +95,8 @@
             </a>
           </div>
           <a href="#">
-          <div class="main-product">
-            <div class="main-product-img">
+          <div class="product-card">
+            <div class="product-card-img">
               <img
                 class="product-img"
                 src="/img/products/funky-vases.jpg"
@@ -108,8 +109,8 @@
           </a>
           </div>
           <a href="#">
-          <div class="main-product">
-            <div class="main-product-img">
+          <div class="product-card">
+            <div class="product-card-img">
               <img
                 class="product-img"
                 src="/img/products/lamps.jpg"
@@ -136,6 +137,6 @@
       <div class="footer-background">
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
