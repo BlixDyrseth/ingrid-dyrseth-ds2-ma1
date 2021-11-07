@@ -2,7 +2,11 @@ body {
   background-color: #f7faf8;
   background-image: url("/img/støy-grønn.png");
   min-height: 100vh;
-  font-family: Rubik, Arial, Helvetica, sans-serif;
+  /*font-family: Rubik, Arial, Helvetica, sans-serif;*/
+  font-family: degular-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .body-index {
@@ -79,15 +83,27 @@ body {
   margin-top: 0.5em;
 }
 
+.text-box {
+  margin: 0 auto;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+p {
+  color: #262626;
+}
+
 a {
+  font-family: Rubik, Arial, Helvetica, sans-serif;
   text-decoration: none;
-  color: #212421;
+  color: #262626;
   font-size: 16px;
+  transition: 0.2s;
 }
 
 a:hover {
   text-decoration: underline;
-  font-style: italic;
+  font-size: 18px;
 }
 h1 {
   font-family: swear-display, serif;
@@ -109,6 +125,15 @@ h2 {
   font-style: normal;
   text-align: center;
   font-size: 35px;
+}
+
+.subheader {
+  font-family: degular-text, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  text-align: left;
+  color: #262626;
 }
 
 h4 {
@@ -205,12 +230,12 @@ h4 {
   display: none;
 }
 
-p {
-  color: #525953;
-}
-
 /*medium screen*/
 @media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 55px;
+  }
+
   .square {
     width: 505px;
     height: 453px;
@@ -240,6 +265,9 @@ p {
   .header-small {
     display: none;
   }
+  .text-box {
+    max-width: 700px;
+  }
 
   .active {
     text-decoration: underline;
@@ -260,11 +288,6 @@ p {
 
   a {
     font-size: 18px;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    font-style: italic;
   }
 
   .h1-homepage {
@@ -340,6 +363,10 @@ p {
     display: flex;
     justify-content: space-evenly;
   }
+
+  a:hover {
+    font-size: 20px;
+  }
 }
 
 /* Big screen*/
@@ -354,6 +381,10 @@ p {
     top: 30em;
     right: 0em;
   }*/
+
+  h1 {
+    font-size: 63px;
+  }
 
   .square {
     width: 505px;
@@ -392,11 +423,6 @@ p {
     background-color: #525953;
     border-radius: 10px;
     margin-top: 0.5em;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    font-style: italic;
   }
 
   .h1-homepage {
